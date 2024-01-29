@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>テスト</title>
   </head>
-  <body class="bg-gray">
+  <body class="bg-gray disabled-textsize-change">
     <div id="app">
       <main class="screen-images screen-main">
         <div class="wrap-content">
@@ -19,7 +19,16 @@
                   </div>
                   <div class="txt">
                     <div class="image-item">
-                      <div>新編　あたらしい　こくご　一上</div>
+                      <ruby>
+                        <rb>漢字</rb>
+                        <rt>ふりがな</rt>
+                        <rb>　</rb>
+                        <rb>ひらがなひ　らがな</rb>
+                        <rt>ふりがなふ　りがな</rt>
+                        <rb>　</rb>
+                        <rb>漢字</rb>
+                        <rt>ふりがなふ</rt>
+                      </ruby>
                     </div>
                   </div>
                 </a>
@@ -32,7 +41,16 @@
                   </div>
                   <div class="txt">
                     <div class="image-item">
-                      <div>新編　あたらしい　こくご　一上</div>
+                      <ruby>
+                        <rb>漢字</rb>
+                        <rt>ふりがな</rt>
+                        <rb>　</rb>
+                        <rb>ひらがなひ　らがな</rb>
+                        <rt>ふりがなふ　りがな</rt>
+                        <rb>　</rb>
+                        <rb>漢字</rb>
+                        <rt>ふりがなふ</rt>
+                      </ruby>
                     </div>
                   </div>
                 </a>
@@ -435,5 +453,9 @@ img {
   .screen-images .content .image-list .image-list-item {
     width: 25%;
   }
+}
+
+.disabled-textsize-change{
+  -webkit-text-size-adjust: 100%;
 }
 </style>
