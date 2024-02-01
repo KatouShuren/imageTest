@@ -456,13 +456,33 @@ img {
   }
 }
 
+/* デバイスが横向きの場合の記述 */
 @media (orientation: landscape){
-  /* デバイスが横向きの場合の記述 */
-  body{background-color: blue !important;}
+  .image-item {
+  display: block;
+  display: -webkit-box;
+  height: 20.8px;
+  font-size: 8px !important;
+  line-height: 1.3;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
 }
 
-@media (orientation: portrait){
 /* デバイスが縦向きの場合の記述 */
-body{background-color: red !important;}
+@media (orientation: portrait){
+  .image-item {
+  display: block;
+  display: -webkit-box;
+  height: 20.8px;
+  font-size: 32px !important;
+  line-height: 1.3;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
 }
 </style>
